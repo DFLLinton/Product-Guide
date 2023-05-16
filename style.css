@@ -43,14 +43,17 @@ header{
   position:relative;
   bottom:190px;
   color: black;
-  font-size: 1.25em;
+  font-size: 1em;
   margin-top: 0px;
   font-family:BrindisaFont;
 }
 
 @font-face {
-  font-family: BrindisaFont;
-  src: url(brindisa.woff);
+    font-family: 'BrindisaFont';
+    src: url('brindisafont-regular_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .overlay{
