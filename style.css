@@ -1,0 +1,120 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+header{
+  font-family: BrindisaFont;
+  font-size: 3em;
+  text-align: center;
+  padding: 20px;
+}
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  padding: 5px;
+  width: 200px;
+  height: 260px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+.text{
+  position:relative;
+  bottom:190px;
+  color: black;
+  font-size: 1.25em;
+  margin-top: 0px;
+  font-family:BrindisaFont;
+}
+
+@font-face {
+  font-family: BrindisaFont;
+  src: url(brindisa.woff);
+}
+
+.overlay{
+  position:relative;
+  bottom:205px;
+   left:0;
+  width:200px;
+  height:200px;
+  opacity: 0;
+}
+
+.cursor2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+background-image: url("images/pointer.png");
+  opacity: 1;
+  position: fixed;
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  background-repeat: no-repeat;
+  z-index: 99;
+}
+.expansion{
+  position: fixed;
+width: 400px;
+height: 400px;
+top: 50%;
+left: 50%;
+margin-top: -200px; /* Negative half of height. */
+margin-left: -200px; /* Negative half of width. */
+  display:none;
+box-shadow: 0px 0px 300px 200px rgba(255,255,255,1);
+}
+#close{
+  position: fixed;
+width: 400px;
+height: 400px;
+top: 50%;
+left: 50%;
+margin-top: -200px; /* Negative half of height. */
+margin-left: -200px; /* Negative half of width. */
+  display:none;
+box-shadow: 0px 0px 300px 200px rgba(255,255,255,1);
+}
+
+#shop{
+    position: fixed;
+width: 100px;
+height: 100px;
+top: 85%;
+left: 90%;
+  display:block;
+}
+
+#background{
+    position: fixed;
+width: 600px;
+height: 600px;
+top: 50%;
+left: 50%;
+margin-top: -300px; /* Negative half of height. */
+margin-left: -300px; /* Negative half of width. */
+  display:block;
+  z-index: -90;
+  opacity: 0.3;
+}
