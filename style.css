@@ -121,3 +121,21 @@ margin-left: -300px; /* Negative half of width. */
   z-index: -90;
   opacity: 0.3;
 }
+
+@media only screen and (max-width: 900px) {
+  #shop{
+left: 85%;
+}
+}
+@media only screen and (max-width: 600px) {
+  #shop{
+left: 80%;
+}
+}
+@media only screen and (max-width: 450px) {
+  #shop{
+    width: 80px;
+    height: 80px;
+left: 70%;
+}
+}
