@@ -139,11 +139,33 @@ left: 85%;
   #shop{
 left: 80%;
 }
+
 }
 @media only screen and (max-width: 450px) {
   #shop{
     width: 80px;
     height: 80px;
-left: 70%;
+}
+.expansion{
+  position: fixed;
+width: 400px;
+height: 400px;
+top: 50%;
+left: 50%;
+margin-top: -200px; /* Negative half of height. */
+margin-left: -175px; /* Negative half of width. */
+  display:none;
+box-shadow: 0px 0px 300px 200px rgba(255,255,255,1);
+}
+#close{
+  position: fixed;
+width: 400px;
+height: 400px;
+top: 50%;
+left: 50%;
+margin-top: -200px; /* Negative half of height. */
+margin-left: -175px; /* Negative half of width. */
+  display:none;
+box-shadow: 0px 0px 300px 200px rgba(255,255,255,1);
 }
 }
