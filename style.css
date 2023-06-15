@@ -126,6 +126,14 @@ margin-left: -300px; /* Negative half of width. */
   #shop{
 left: 85%;
 }
+#expansion {
+  height: 350px;
+  width: 350px;
+}
+#close {
+  height: 350px;
+  width: 350px;
+}
 }
 @media only screen and (max-width: 600px) {
   #shop{
